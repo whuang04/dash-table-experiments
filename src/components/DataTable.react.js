@@ -318,6 +318,7 @@ class DataTable extends Component {
             };
         }
 
+        console.log('Rendering ReactJS DataGrid, with columns: ' + columns);
         return  (
             <ReactDataGrid
                 enableDragAndDrop={enable_drag_and_drop}
@@ -385,6 +386,8 @@ DataTable.propTypes = {
      * a custom order for your columns.
      */
     columns: PropTypes.arrayOf(PropTypes.string),
+
+    column_class_names: PropTypes.arrayOf(PropTypes.string),
 
     row_selectable: PropTypes.bool,
     selected_row_indices: PropTypes.array,

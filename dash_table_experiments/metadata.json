@@ -1,6 +1,7 @@
 {
   "src/components/DataTable.react.js": {
     "description": "",
+    "displayName": "DataTable",
     "methods": [
       {
         "name": "propsToState",
@@ -207,6 +208,16 @@
         "required": false,
         "description": "Order of columns. Note that the column names are specified in\n`rows` but without order. This attribute allows you to specify\na custom order for your columns."
       },
+      "column_class_names": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
       "row_selectable": {
         "type": {
           "name": "bool"
@@ -361,6 +372,7 @@
   },
   "src/components/EditableTable.react.js": {
     "description": "",
+    "displayName": "EditableTable",
     "methods": [],
     "props": {
       "id": {
@@ -470,6 +482,7 @@
   },
   "src/components/VirtualizedTable.react.js": {
     "description": "",
+    "displayName": "VirtualizedTable",
     "methods": [
       {
         "name": "cellRenderer",
